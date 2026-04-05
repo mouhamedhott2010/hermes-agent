@@ -118,3 +118,5 @@ from environments.tool_call_parsers.kimi_k2_parser import KimiK2ToolCallParser  
 from environments.tool_call_parsers.glm45_parser import Glm45ToolCallParser  # noqa: E402, F401
 from environments.tool_call_parsers.glm47_parser import Glm47ToolCallParser  # noqa: E402, F401
 from environments.tool_call_parsers.qwen3_coder_parser import Qwen3CoderToolCallParser  # noqa: E402, F401
+from environments.tool_call_parsers.minimax_m25_parser import MiniMaxM25ToolCallParser # noqa: E402, F401
+from environments.tool_call_parsers.minimax_m25_parser import MiniMaxToolCallParser # noqa: E402, F401
