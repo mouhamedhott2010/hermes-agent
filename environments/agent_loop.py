@@ -265,6 +265,10 @@ class HermesAgentLoop:
             ):
                 try:
                     from environments.tool_call_parsers import get_parser
+                # Auto-detect MiniMax XML format
+                if "<minimax:tool_call>" in (assistant_msg.content or ""):
+                    fallback_parser = get_parser("minimax_m25")
+                else:
                     fallback_parser = get_parser("hermes")
                     parsed_content, parsed_calls = fallback_parser.parse(
                         assistant_msg.content
